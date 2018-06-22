@@ -8,6 +8,6 @@ function driverNamesWithRevenueOver(drivers,revenue) {
   return drivers.filter(function(driver){ return driver.revenue > revenue;}).map(function(driverObject) {return driverObject.name;});
 }
 
-function exactMatch(drivers,revenue) {
-  return drivers.filter(function(driver){ return driver.revenue === revenue;});
+function exactMatch(drivers,object) {
+  return drivers.filter(function(driver){ return driver.revenue === object.revenue;});
 }
