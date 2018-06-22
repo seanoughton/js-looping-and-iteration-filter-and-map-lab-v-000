@@ -13,5 +13,5 @@ function exactMatch(drivers,object) {
 }
 
 function exactMatchToList(drivers,object) {
-  return drivers.filter(function(driver){ return driver.revenue === object.revenue || driver.name === object.name;});
+  return drivers.filter(function(driver){ return driver.revenue === object.revenue || driver.name === object.name;}).map(function(driverObject) {return driverObject.name;});
 }
